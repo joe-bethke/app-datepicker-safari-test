@@ -1,9 +1,9 @@
 export default {
   open: true,
   watch: true,
-  appIndex: 'index.html',
+  appIndex: "index.html",
   nodeResolve: {
-    exportConditions: ['development'],
+    exportConditions: ["development"],
   },
-  port: 5173,
+  port: 3030,
 };
