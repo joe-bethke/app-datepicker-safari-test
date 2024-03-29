@@ -1,34 +1,9 @@
 {
+  "extends": "./reallyland.tsconfig.json",
   "compilerOptions": {
-    "target": "ES2021",
-    "module": "ES2022",
-    "moduleResolution": "Bundler",
-    "lib": ["es2021", "DOM", "DOM.Iterable"],
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "inlineSources": true,
     "outDir": "dist",
     "rootDir": "src",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
-    "noUncheckedIndexedAccess": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "noImplicitOverride": false,
-    "useDefineForClassFields": false,
-    "strictPropertyInitialization": false,
-    "plugins": [
-      {
-        "name": "typescript-plugin-lit-html"
-      }
-    ]
+    "lib": ["DOM"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["dist", "node_modules"]

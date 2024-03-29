@@ -1,22 +1,22 @@
-import { LitElement, html } from 'lit';
-import { customElement } from 'lit/decorators.js';
-import 'app-datepicker';
+import "app-datepicker";
+import { LitElement, html } from "lit";
+import { customElement } from "lit/decorators.js";
 
-@customElement('my-component')
+@customElement("my-component")
 class MyCompoonent extends LitElement {
-  render() {
+  override render() {
     return html`
-    <app-date-picker
-      locale="en-US"
-      .max=${'2024-04-31'}
-      .min=${'2024-03-38'}
-    ></app-date-picker>
+      <app-date-picker
+        locale="en-US"
+        .max=${"2024-04-31"}
+        .min=${"2024-03-38"}
+      ></app-date-picker>
     `;
   }
 }
 
 declare global {
   interface HTMLElementTagNameMap {
-    'my-component': MyCompoonent;
+    "my-component": MyCompoonent;
   }
 }
